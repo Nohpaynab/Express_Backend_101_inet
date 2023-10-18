@@ -1,0 +1,23 @@
+{
+  "name": "001_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "local": "nodemon -r dotenv/config ./src/app.js dotenv_config_path=./.env.local",
+    "dev": "node -r dotenv/config ./src/app.js dotenv_config_path=./.env.dev",
+    "staging": "node -r dotenv/config ./src/app.js dotenv_config_path=./.env.staging",
+    "start": "node -r dotenv/config ./src/app.js dotenv_config_path=./.env.production"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mysql2": "^3.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
